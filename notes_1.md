@@ -7,4 +7,15 @@ The code here is a very simple example of this. The media query overwrites a min
 
 Here you could for hte main sections set the first to flex:2 and the second to flex 1 and get a 2 /3 to 1/3 size ratio. However I find its better to have one of the elements a fixed size and the other one flex:1 to take up the remaining space, so that only one element resizes. Additionally you will see that I do a centered max with content container. The real nytimes website also does this. Doing full page width designs should be the exception to this, there are reasons to do it, but screens can get very wide and by setting a max width container you eliminate your design looking weird on very large screens.
 
-If you doc your dev tools in chrome to the right side of the screen, you can drag them bigger and smaller and this is an easy way to change hte screen size and see the changes
+If you doc your dev tools in chrome to the right side of the screen, you can drag them bigger and smaller and this is an easy way to change hte screen size and see the changes.
+
+
+Also if you think that 768px is arbitary, its an industy standard for some reason I don't know (original ipad size or something ? ) but here is how bootstrap does their breaks
+
+https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+and here is how tailwind does theirs
+
+https://tailwindcss.com/docs/responsive-design
+
+depending on what you are doing usually I can get away with just using below 768 and above it, but some things require more detailed breaks.
