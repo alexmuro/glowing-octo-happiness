@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		
+		.content-container {
+			border: 1px dashed red;
+			max-width: 1280px;
+			margin: 0 auto;
+			display: flex;
+		}
+		.main {
+			flex: 1;
+			border: 1px dashed skyblue;
+		}
+		.sidebar {
+			width: 400px;
+			border: 1px dashed seagreen;
+		}
+		.content {
+			height: 600px;
+			padding:10px;
+		}
+
+		@media (max-width: 768px) {
+  			.content-container {
+  				flex-direction: column;
+  			}
+  			.sidebar {
+  				width: 100%;
+  			}
+
+		}	
+		
+		</style>
+		<link rel="stylesheet" href="reset.css">
+	</head>
+	<body>
+		<div class='content-container'>
+			<div class="main">
+				<div class='content'>
+					Section with content and image on right
+				</div>
+			</div>
+			<div class='sidebar'>
+				<div class='content'>
+					sidebar with list
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
